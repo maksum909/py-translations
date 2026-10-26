@@ -1,4 +1,4 @@
-# py-translations
+# django-py-translations
 
 Typed translations for Django model fields. One line per field. A JSON column by default, or a real translation table when a language needs its own index.
 
@@ -18,13 +18,13 @@ class Article(TranslatableModel):
 ## Install
 
 ```bash
-pip install py-translations
+pip install django-py-translations
 ```
 
 Add `py_translations` to `INSTALLED_APPS`. Django REST framework is an extra:
 
 ```bash
-pip install py-translations[drf]
+pip install django-py-translations[drf]
 ```
 
 Django 4.2+ and Python 3.10+. Django 4.2 left extended support in April 2026; it stays in the test matrix because projects still run it. Current targets are 5.2 LTS, 6.0, and 6.1.
@@ -127,7 +127,7 @@ python manage.py migrate_parler \
 
 `--dry-run` prints the count and writes nothing. The command copies overlapping translated fields and keeps the parler rows. The table name is `*_i18n`, so a parler `*_translation` table can sit beside it during the move.
 
-| | parler | py-translations |
+| | parler | django-py-translations |
 | --- | --- | --- |
 | Storage | A translation row and a join | JSON column, or a table when you ask for one |
 | `obj.title` | Often a query inside the descriptor | The value already loaded with the instance |

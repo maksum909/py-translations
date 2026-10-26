@@ -16,7 +16,7 @@ try:
 except ImportError as exc:  # pragma: no cover
     raise ImportError(
         "TranslatableModelSerializer requires djangorestframework. "
-        "Install it with the py-translations[drf] extra."
+        "Install it with the django-py-translations[drf] extra."
     ) from exc
 
 

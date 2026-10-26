@@ -1,5 +1,5 @@
 [project]
-name = "py-translations"
+name = "django-py-translations"
 version = "0.1.0"
 description = "Typed translations for Django model fields. JSON column by default, a translation table when you need indexes."
 readme = "README.md"
